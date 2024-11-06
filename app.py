@@ -14,7 +14,7 @@ model = pickle.load(open('scholar.pkl','rb'))
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("templates/index.html")
 
 
 scholarship=['INSPIRE Scholarship', 'National Fellowship Disabilities', 'Indira Gandhi Scholarship', 'Abdul Kalam Fellowship', 'AAI Sports Scholarship', 'Glow and lovely Scholarship', 'Dr. Ambedkar Scholarship', 'National Overseas Scholarship', 'Pragati Scholarship', 'ONGC Sports Scholarship']
@@ -70,9 +70,9 @@ def predict():
             data.append(sch)
             sch = []
     
-        return render_template("predict.html",data = data) 
+        return render_template("templates/predict.html",data = data) 
     else:
-        return render_template('index.html')
+        return render_template('templates/index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
