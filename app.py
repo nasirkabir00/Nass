@@ -14,7 +14,7 @@ model = pickle.load(open('scholar.pkl','rb'))
 
 @app.route("/")
 def home():
-    return render_template("./templates/index.html")
+    return render_template("index.html")
 
 
 scholarship=['INSPIRE Scholarship', 'National Fellowship Disabilities', 'Indira Gandhi Scholarship', 'Abdul Kalam Fellowship', 'AAI Sports Scholarship', 'Glow and lovely Scholarship', 'Dr. Ambedkar Scholarship', 'National Overseas Scholarship', 'Pragati Scholarship', 'ONGC Sports Scholarship']
