@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from array import *
 import sklearn
 
-dfd = pd.read_csv("dataset/details.csv")
+dfd = pd.read_csv("dataset/details .csv")
 df=pd.read_csv("dataset/labeled.csv")
 
 app = Flask(__name__)
